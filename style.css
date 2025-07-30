@@ -1,7 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 @font-face {
@@ -12,7 +12,7 @@
 }
 
 body {
-  background-image: url('images/background/bg.jpg'); 
+  background-image: url('images/background/bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -53,19 +53,25 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 50px;
   background-color: #303030;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #ff5b0f;
   padding: 0 10px;
+  border-bottom: 1px solid #ff5b0f;
   z-index: 1000;
+  gap: 10px;
 }
 
 header h1 {
-  font-size: 22px;
+  flex: 1 1 auto;
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
 }
 
 main {
@@ -132,50 +138,51 @@ footer {
 }
 
 #menu-btn {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  z-index: 30;
+flex: 0 0 auto;
+background: none;
+border: none;
+cursor: pointer;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 40px;
+height: 40px;
 }
 
 #menu-btn .menu-icon {
-  width: 30px;
-  height: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+width: 30px;
+height: 22px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
 #menu-btn .menu-icon div {
-  height: 3.5px;
-  background: white;
-  border-radius: 2px;
+height: 3.5px;
+background: white;
+border-radius: 2px;
 }
 
 #menu {
-  position: fixed;
-  top: 40px;
-  left: 0;
-  width: 250px;
-  height: calc(100vh - 40px);
-  background-color: #303030;
-  border-right: 1px solid #ff5b0f;
-  color: white;
-  padding: 20px;
-  z-index: 20;
-  box-shadow: 2px 0 8px rgba(0,0,0,0.7);
-  overflow-y: auto;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
+position: fixed;
+top: 40px;
+left: 0;
+width: 250px;
+height: calc(100vh - 40px);
+background-color: #303030;
+border-right: 1px solid #ff5b0f;
+color: white;
+padding: 20px;
+z-index: 20;
+box-shadow: 2px 0 8px rgba(0,0,0,0.7);
+overflow-y: auto;
+transform: translateX(-100%);
+transition: transform 0.3s ease-in-out;
 }
 
 #menu.active {
-  transform: translateX(0);
+transform: translateX(0);
 }
 
 body.menu-open::before {
@@ -282,10 +289,10 @@ html {
 }
 
 #modal {
-  display: none;
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  z-index: 9999;
+display: none;
+position: fixed;
+top: 0; left: 0; right: 0; bottom: 0;
+z-index: 9999;
 }
 
 .modal-background {
@@ -296,21 +303,21 @@ html {
 }
 
 #modal-img {
-  position: fixed;
-  max-width: 90vw;
-  max-height: 90vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.8);
-  cursor: pointer;
+position: fixed;
+max-width: 90vw;
+max-height: 90vh;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0,0,0,0.8);
+cursor: pointer;
 }
 
 .contact-popup {
   display: none;
   position: absolute;
-  bottom: 40px; 
+  bottom: 40px;
   right: 0;
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
@@ -354,15 +361,15 @@ html {
   }
 
   #menu {
-    width: 200px;
-    top: 50px;
-    height: calc(100vh - 50px);
-    padding: 15px;
+  width: 200px;
+  top: 50px;
+  height: calc(100vh - 50px);
+  padding: 15px;
   }
 
   #menu-btn {
-    left: 15px;
-    top: 50%;
+  left: 15px;
+  top: 50%;
   }
 
   .image-gallery {
