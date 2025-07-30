@@ -2,12 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -18,7 +12,7 @@ html {
 }
 
 body {
-  background-image: url('images/background/bg.jpg');
+  background-image: url('images/background/bg.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -31,27 +25,21 @@ body {
   color: white;
 }
 
-body::before,
-body.menu-open::before {
+.steins-font {
+  font-family: 'Steins', Arial, sans-serif;
+}
+
+body::before {
   content: '';
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background: rgba(20, 20, 20, 0.4);
   backdrop-filter: blur(10px);
   z-index: 0;
   pointer-events: none;
-}
-
-body.menu-open::before {
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 15;
-  pointer-events: auto;
-}
-
-.steins-font {
-  font-family: 'Steins', Arial, sans-serif;
 }
 
 header,
@@ -180,7 +168,7 @@ footer {
   color: white;
   padding: 20px;
   z-index: 20;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 0 8px rgba(0,0,0,0.7);
   overflow-y: auto;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
@@ -188,6 +176,17 @@ footer {
 
 #menu.active {
   transform: translateX(0);
+}
+
+body.menu-open::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 15;
+  pointer-events: auto;
 }
 
 .accordion-btn {
@@ -226,15 +225,19 @@ footer {
   text-decoration: underline;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .anchor {
   scroll-margin-top: 200px;
 }
 
 .date {
-  margin-top: 20px;
+  margin-top:20px;
   margin-left: 20px;
   font-family: 'Steins', Arial, sans-serif;
-  text-decoration: underline;
+  text-decoration:underline;
 }
 
 .content {
@@ -263,7 +266,7 @@ footer {
   width: 150px;
   height: auto;
   border-radius: 5px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s;
 }
 
 .image-gallery img.zoomable:hover {
@@ -273,28 +276,22 @@ footer {
 .image-gallery .caption {
   margin-top: 6px;
   font-size: 12px;
-  color: #e0e0e0;
-  text-align: center;
+  color: #ccc;
+  text-align:center;
   user-select: none;
 }
 
 #modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   z-index: 9999;
 }
 
 .modal-background {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.7);
   backdrop-filter: blur(5px);
 }
 
@@ -306,20 +303,20 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
   cursor: pointer;
 }
 
 .contact-popup {
   display: none;
   position: absolute;
-  bottom: 40px;
+  bottom: 40px; 
   right: 0;
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   width: 250px;
   z-index: 1000;
   font-size: 14px;
@@ -338,4 +335,68 @@ footer {
 
 .contact-popup ul li {
   margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    height: 50px;
+    padding: 0 15px;
+    font-size: 18px;
+  }
+
+  main {
+    padding: 15px 10px 80px 10px;
+    margin-top: 50px;
+  }
+
+  #menu {
+    width: 200px;
+    top: 50px;
+    height: calc(100vh - 50px);
+    padding: 15px;
+  }
+
+  #menu-btn {
+    left: 15px;
+    top: 50%;
+  }
+
+  .image-gallery {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .image-gallery img.zoomable {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  footer {
+    height: auto;
+    padding: 15px 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-right img {
+    margin: 0 10px;
+  }
+
+  .contact-popup {
+    width: 90vw;
+    right: 5vw;
+    bottom: 60px;
+    font-size: 13px;
+  }
 }
