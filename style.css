@@ -42,7 +42,6 @@ body::before {
   pointer-events: none;
 }
 
-header,
 footer {
   position: relative;
   z-index: 1;
@@ -72,6 +71,10 @@ header h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
+  padding-left: 5px;
+  user-select: none;
+  z-index: 100;
+  position: relative;
 }
 
 main {
@@ -138,7 +141,7 @@ footer {
 }
 
 #menu-btn {
-flex: 0 0 auto;
+flex: 0 0 50px;
 background: none;
 border: none;
 cursor: pointer;
@@ -146,8 +149,8 @@ padding: 0;
 display: flex;
 align-items: center;
 justify-content: center;
-width: 40px;
-height: 40px;
+z-index: 1010;
+position: relative;
 }
 
 #menu-btn .menu-icon {
@@ -407,3 +410,5 @@ cursor: pointer;
     font-size: 13px;
   }
 }
+
+/* Actualizado 1.v */
