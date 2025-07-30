@@ -1,1 +1,104 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tekhion Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <video id="animacion" loop muted playsinline 
+    style="position: fixed; top:0; left:0; width: 100vw; height: 100vh; object-fit: cover; z-index: -1;">
+    <source src="video/scroll.mp4" type="video/mp4" />
+    Tu navegador no soporta vídeo.
+  </video>
+
+<header>
+  <button id="menu-btn" aria-label="Abrir menú">
+    <div class="menu-icon">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </button>
+  <h1 class="steins-font">Divergence Meter Project</h1>
+</header>
+
+  <main>
+    <h1 class="steins-font">Divergence Meter Build</h1>
+    <p>On this page, I will be updating everything I do to build the <a class="link" href=http://brotoro.com/dm/>Divergence Meter.</a> (All credits go to TomTitor, who made all the instructions, codes, designs, circuits… everything you will see here, components, circuits, everything is from his page, so I thank him for all of that.)</p>
+    
+    <h1 class="date" id="july30">30/07/25</h1>
+<div class="content-wrapper">
+  <p class="content">
+    I’ve created a <a class="link" href="https://drive.proton.me/urls/RG8CAK8HNW#9eYjQYaqVEix">list</a> based on the original one with all the necessary electronic components. One of them, the 1364 - HVPS Horizontal, needs to be ordered from the US (the shipping cost is $22, rip. But I guess it’s worth it).
+  </p>
+  <p class="content">
+    As for the PCBs, the price can vary a lot depending on the supplier, shipping, and your location. I’m currently considering ordering them from <a class="link" href="https://jlcpcb.com/">JLCPCB</a>, which seems like a very good option. They require a minimum of 5 boards per design (there are two designs for this project), but the upside is that the total cost, including taxes and shipping, is around €50—roughly half of what it would cost to order from the project's original site. They actually recommend using local PCB manufacturers depending on where you live.
+  </p>
+  <p class="content">
+    Once I completed the list, I ordered the components with the financial help of a friend who is also eager to see this project become a reality, for which I'm very grateful. Most of the parts were ordered through <a class="link" href="https://www.mouser.es/">Mouser.es</a>, a site recommended by the original project creators. In my case, they offer free shipping from Europe, and the total cost was between €70 and €80.
+  </p>
+
+  
+</div>
+
+<div class="image-gallery">
+  <div>
+    <img src="images/screenshots/1.png" alt="Imagen con lista de componentes" class="zoomable" />
+    <p class="caption">List of components</p>
+  </div>
+</div>
+
+<div id="modal">
+  <div class="modal-background"></div>
+  <img id="modal-img" src="" alt="Imagen ampliada" />
+  <p class="caption">List of components</p>
+</div>
+
+<div style="height: 1500px; pointer-events: none; background: transparent;"></div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        Tekhion.com - 2025 
+      </div>
+      <div class="footer-right">
+        <a href="https://www.youtube.com/@AgentTekhion" target="_blank" rel="noopener noreferrer">
+          <img src="images/icons/youtube.png" alt="YouTube">
+        </a>
+        <a href="https://x.com/Alexx4712" target="_blank" rel="noopener noreferrer">
+          <img src="images/icons/twitter.png" alt="Twitter">
+        </a>
+        <a href="#" id="mail-icon" rel="noopener noreferrer">
+          <img src="images/icons/mail.png" alt="contacto">
+        </a>
+
+        <div id="contact-popup" class="contact-popup">
+          <ul>
+            <li>Email: <a class="link" href="mailto:Tek1048596@proton.me">Tek1048596@proton.me</a></li>
+            <li>Discord: tekhionn</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<nav id="menu">
+  <ul>
+    <li>
+      <button class="accordion-btn">July 25</button>
+      <ul class="submenu">
+        <li><a href="#july30"> - 30/7/25</a></li>
+      </ul>
+    </li>
+</nav>
+
+  <script src="menu.js"></script>
+  <script src="menuanimation.js"></script>
+  <script src="scroll.js"></script>
+  <script src="images.js"></script>
+  <script src="contact.js"></script>
+  </body>
