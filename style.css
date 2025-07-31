@@ -191,6 +191,14 @@ body.menu-open::before {
   pointer-events: auto;
 }
 
+body.modal-open .image-gallery img.zoomable:hover {
+  transform: none !important;
+  cursor: default !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+
 .accordion-btn {
   background: none;
   border: none;
@@ -251,6 +259,7 @@ body.menu-open::before {
   height: 0.125rem;
 }
 
+
 .image-gallery {
   display: flex;
   gap: 0.625rem;
@@ -276,6 +285,12 @@ body.menu-open::before {
   color: #ccc;
   text-align: center;
   user-select: none;
+}
+
+.image-gallery > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #modal {
@@ -331,6 +346,10 @@ body.menu-open::before {
 
 .contact-popup ul li {
   margin-bottom: 0.375rem;
+}
+
+.clickable-images{
+  text-decoration:none;
 }
 
 @media (max-width: 768px) {

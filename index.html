@@ -12,7 +12,7 @@
     <video id="animacion" loop muted playsinline 
     style="position: fixed; top:0; left:0; width: 100vw; height: 100vh; object-fit: cover; z-index: -1;">
     <source src="video/scroll.mp4" type="video/mp4" />
-    Tu navegador no soporta vídeo.
+    Your browser does not support video.
   </video>
 
 <header>
@@ -30,35 +30,59 @@
     <h1 class="steins-font">Divergence Meter Build</h1>
     <p>On this page, I will be updating everything I do to build the <a class="link" href=http://brotoro.com/dm/>Divergence Meter.</a> (All credits go to TomTitor, who made all the instructions, codes, designs, circuits… everything you will see here, components, circuits, everything is from his page, so I thank him for all of that.)</p>
     
+
     <h1 class="date" id="july30">30/07/25</h1>
 <div class="content-wrapper">
   <p class="content">
-    I’ve created a <a class="link" href="https://drive.proton.me/urls/RG8CAK8HNW#9eYjQYaqVEix">list</a> based on the original one with all the necessary electronic components. One of them, the 1364 - HVPS Horizontal, needs to be ordered from the US (the shipping cost is $22, rip. But I guess it’s worth it).
+    I've created a <a class="link" href="https://drive.proton.me/urls/RG8CAK8HNW#9eYjQYaqVEix">list</a> based on the original one with all the necessary electronic components. One of them, the 1364 - HVPS Horizontal, needs to be ordered from the US (the shipping cost is $22, rip. But I guess it's worth it).
   </p>
   <p class="content">
-    As for the PCBs, the price can vary a lot depending on the supplier, shipping, and your location. I’m currently considering ordering them from <a class="link" href="https://jlcpcb.com/">JLCPCB</a>, which seems like a very good option. They require a minimum of 5 boards per design (there are two designs for this project), but the upside is that the total cost, including taxes and shipping, is around €50—roughly half of what it would cost to order from the project's original site. They actually recommend using local PCB manufacturers depending on where you live.
+    As for the PCBs, the price can vary a lot depending on the supplier, shipping, and your location. I'm currently considering ordering them from <a class="link" href="https://jlcpcb.com/">JLCPCB</a>, which seems like a very good option. They require a minimum of 5 boards per design (there are two designs for this project), but the upside is that the total cost, including taxes and shipping, is around €50, half of what it would cost to order from the project's original site.
   </p>
   <p class="content">
-    Once I completed the list, I ordered the components with the financial help of a friend who is also eager to see this project become a reality, for which I'm very grateful. Most of the parts were ordered through <a class="link" href="https://www.mouser.es/">Mouser.es</a>, a site recommended by the original project creators. In my case, they offer free shipping from Europe, and the total cost was between €70 and €80.
+    I ordered the components with the financial help of a friend who is also eager to see this project become a reality, for which I'm very grateful. Most of the parts were ordered through <a class="link" href="https://www.mouser.es/">Mouser.es</a>, a site recommended by the original project creators. In my case, they offer free shipping from Europe, and the total cost was between €70 and €80.
   </p>
-
-  
 </div>
 
 <div class="image-gallery">
   <div>
-    <img src="images/screenshots/1.png" alt="Imagen con lista de componentes" class="zoomable" />
+    <img src="images/screenshots/1.png" alt="List of components" class="zoomable" />
     <p class="caption">List of components</p>
   </div>
 </div>
 
 <div id="modal">
   <div class="modal-background"></div>
-  <img id="modal-img" src="" alt="Imagen ampliada" />
+  <img id="modal-img" src="" alt="Zoomed image" />
   <p class="caption">List of components</p>
 </div>
 
-<div style="height: 1500px; pointer-events: none; background: transparent;"></div>
+
+    <h1 class="date" id="july31">31/07/25</h1>
+<div class="content-wrapper">
+  <p class="content">
+    After checking the page that I mentioned yesterday, I decided to try buying there the 2 PCBs, in total the price was around ~45€ (with shipping included), after trying to watch if there would be any possibility to get any fabricator in Spain (I guess they exist but I couldn't find any that would be worth). I guess I will check if it was worth buying there or it would be better just buying on the link of the official Project.
+  </p>
+  <p class="content">
+    I also remembered the component I mentioned yesterday (1364 - HVPS-H), I forgot to buy it, as this is not purchased at Mouser (;-;). Now with all the orders placed (minus the nixies tubes that will be an adventure to find good ones in terms of price...) it would only remain to wait for everything to arrive and check it out. I guess this could take at most 1 week, since the PCBs take between 4-5 days to be manufactured plus shipping, the same with the Mouser components, while the 1364-HVPS, if you live outside US as in my case, a week minimum...
+  </p>
+  
+</div>
+
+<div class="image-gallery">
+  <div>
+    <img src="images/screenshots/2.png" alt="PCBs ordered" class="zoomable" />
+    <p class="caption">Ordered PCBs</p>
+  </div>
+</div>
+
+<div id="modal">
+  <div class="modal-background"></div>
+  <img id="modal-img" src="" alt="Zoomed image" />
+  <p class="caption">Ordered PCBs</p>
+</div>
+
+
 
   <footer>
     <div class="footer-content">
@@ -66,10 +90,10 @@
         Tekhion.com - 2025 
       </div>
       <div class="footer-right">
-        <a href="https://www.youtube.com/@AgentTekhion" target="_blank" rel="noopener noreferrer">
+        <a class="clickable-images" href="https://www.youtube.com/@AgentTekhion" target="_blank" rel="noopener noreferrer">
           <img src="images/icons/youtube.png" alt="YouTube">
         </a>
-        <a href="https://x.com/Alexx4712" target="_blank" rel="noopener noreferrer">
+        <a class="clickable-images" href="https://x.com/Alexx4712" target="_blank" rel="noopener noreferrer">
           <img src="images/icons/twitter.png" alt="Twitter">
         </a>
         <a href="#" id="mail-icon" rel="noopener noreferrer">
@@ -93,6 +117,7 @@
       <button class="accordion-btn">July 25</button>
       <ul class="submenu">
         <li><a href="#july30"> - 30/7/25</a></li>
+        <li><a href="#july31"> - 31/7/25</a></li>
       </ul>
     </li>
 </nav>
