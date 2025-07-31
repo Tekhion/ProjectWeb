@@ -1,7 +1,8 @@
+
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -9,6 +10,11 @@ box-sizing: border-box;
   src: url('fonts/SteinsFonts.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +29,7 @@ body {
   flex-direction: column;
   position: relative;
   color: white;
+  font-size: 1rem;
 }
 
 .steins-font {
@@ -32,46 +39,36 @@ body {
 body::before {
   content: '';
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background: rgba(20, 20, 20, 0.4);
   backdrop-filter: blur(10px);
   z-index: 0;
   pointer-events: none;
 }
 
-footer {
-  position: relative;
-  z-index: 1;
-}
-
 header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
+  top: 0; left: 0; right: 0;
+  height: 3.125rem;
   background-color: #303030;
   color: white;
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 0.625rem;
   border-bottom: 1px solid #ff5b0f;
   z-index: 1000;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 header h1 {
   flex: 1 1 auto;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0;
-  padding-left: 5px;
+  padding-left: 0.3125rem;
   user-select: none;
   z-index: 100;
   position: relative;
@@ -80,29 +77,26 @@ header h1 {
 main {
   position: relative;
   z-index: 1;
-  margin-top: 40px;
-  padding: 20px;
-  padding-bottom: 100px;
+  margin-top: 3.125rem;
+  padding: 1.25rem;
+  padding-bottom: 6.25rem;
 }
 
 main p {
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-left: 1.25rem;
+  margin-top: 0.625rem;
 }
 
 footer {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
+  bottom: 0; left: 0; right: 0;
+  height: auto;
   background-color: #303030;
   color: #ffffff;
-  padding: 20px;
+  padding: 1rem;
   text-align: left;
   border-top: 1px solid #ff5b0f;
   z-index: 30;
-  box-sizing: border-box;
 }
 
 .footer-content {
@@ -117,10 +111,9 @@ footer {
 }
 
 .footer-right img {
-  width: 24px;
+  width: 1.5rem;
   height: auto;
-  margin-left: 15px;
-  margin-right: 20px;
+  margin: 0 1rem;
   transition: transform 0.1s ease;
   cursor: pointer;
 }
@@ -137,55 +130,54 @@ footer {
 
 .link:hover {
   color: rgb(255, 198, 162);
-  text-decoration: underline;
 }
 
 #menu-btn {
-flex: 0 0 50px;
-background: none;
-border: none;
-cursor: pointer;
-padding: 0;
-display: flex;
-align-items: center;
-justify-content: center;
-z-index: 1010;
-position: relative;
+  flex: 0 0 3.125rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1010;
+  position: relative;
 }
 
 #menu-btn .menu-icon {
-width: 30px;
-height: 22px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+  width: 1.875rem;
+  height: 1.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #menu-btn .menu-icon div {
-height: 3.5px;
-background: white;
-border-radius: 2px;
+  height: 0.21875rem;
+  background: white;
+  border-radius: 0.125rem;
 }
 
 #menu {
-position: fixed;
-top: 40px;
-left: 0;
-width: 250px;
-height: calc(100vh - 40px);
-background-color: #303030;
-border-right: 1px solid #ff5b0f;
-color: white;
-padding: 20px;
-z-index: 20;
-box-shadow: 2px 0 8px rgba(0,0,0,0.7);
-overflow-y: auto;
-transform: translateX(-100%);
-transition: transform 0.3s ease-in-out;
+  position: fixed;
+  top: 3.125rem;
+  left: 0;
+  width: 15.625rem;
+  height: calc(100vh - 3.125rem);
+  background-color: #303030;
+  border-right: 1px solid #ff5b0f;
+  color: white;
+  padding: 1.25rem;
+  z-index: 20;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.7);
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
 }
 
 #menu.active {
-transform: translateX(0);
+  transform: translateX(0);
 }
 
 body.menu-open::before {
@@ -206,7 +198,7 @@ body.menu-open::before {
   font-weight: bold;
   text-align: left;
   width: 100%;
-  padding: 5px 0;
+  padding: 0.3125rem 0;
   cursor: pointer;
 }
 
@@ -217,17 +209,16 @@ body.menu-open::before {
 
 .submenu {
   display: none;
-  margin-left: 10px;
-  margin-top: 5px;
+  margin-left: 0.625rem;
+  margin-top: 0.3125rem;
 }
 
 .submenu li {
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
 }
 
 .submenu li a {
   color: white;
-  font-weight: normal;
   text-decoration: none;
 }
 
@@ -235,24 +226,20 @@ body.menu-open::before {
   text-decoration: underline;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .anchor {
-  scroll-margin-top: 200px;
+  scroll-margin-top: 12.5rem;
 }
 
 .date {
-  margin-top:20px;
-  margin-left: 20px;
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
   font-family: 'Steins', Arial, sans-serif;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 .content {
   margin: 0 auto;
-  padding: 10px;
+  padding: 0.625rem;
   line-height: 1.6;
   font-family: Arial, sans-serif;
   font-size: 1rem;
@@ -261,21 +248,21 @@ html {
 
 .spacer {
   display: block;
-  height: 2px;
+  height: 0.125rem;
 }
 
 .image-gallery {
   display: flex;
-  gap: 10px;
-  margin-top: 20px;
-  margin-left: 15px;
+  gap: 0.625rem;
+  margin-top: 1.25rem;
+  margin-left: 0.9375rem;
 }
 
 .image-gallery img.zoomable {
   cursor: pointer;
-  width: 150px;
+  width: 9.375rem;
   height: auto;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   transition: transform 0.3s;
 }
 
@@ -284,18 +271,18 @@ html {
 }
 
 .image-gallery .caption {
-  margin-top: 6px;
-  font-size: 12px;
+  margin-top: 0.375rem;
+  font-size: 0.75rem;
   color: #ccc;
-  text-align:center;
+  text-align: center;
   user-select: none;
 }
 
 #modal {
-display: none;
-position: fixed;
-top: 0; left: 0; right: 0; bottom: 0;
-z-index: 9999;
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 9999;
 }
 
 .modal-background {
@@ -306,107 +293,100 @@ z-index: 9999;
 }
 
 #modal-img {
-position: fixed;
-max-width: 90vw;
-max-height: 90vh;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-border-radius: 10px;
-box-shadow: 0 0 20px rgba(0,0,0,0.8);
-cursor: pointer;
+  position: fixed;
+  max-width: 90vw;
+  max-height: 90vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.625rem;
+  box-shadow: 0 0 1.25rem rgba(0,0,0,0.8);
+  cursor: pointer;
 }
 
 .contact-popup {
   display: none;
   position: absolute;
-  bottom: 40px;
+  bottom: 2.5rem;
   right: 0;
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  width: 250px;
+  padding: 0.9375rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.3);
+  width: 15.625rem;
   z-index: 1000;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .contact-popup p {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 0 0.5rem 0;
   font-weight: bold;
 }
 
 .contact-popup ul {
-  padding-left: 15px;
+  padding-left: 0.9375rem;
   margin: 0;
 }
 
 .contact-popup ul li {
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
 }
 
 @media (max-width: 768px) {
-  body {
+  html {
     font-size: 14px;
   }
 
   header {
-    height: 50px;
-    padding: 0 15px;
-    font-size: 18px;
+    height: 3.125rem;
+    padding: 0 0.9375rem;
+    font-size: 1.125rem;
   }
 
   main {
-    padding: 15px 10px 80px 10px;
-    margin-top: 50px;
+    padding: 0.9375rem 0.625rem 5rem;
+    margin-top: 3.125rem;
   }
 
   #menu {
-  width: 200px;
-  top: 50px;
-  height: calc(100vh - 50px);
-  padding: 15px;
-  }
-
-  #menu-btn {
-  left: 15px;
-  top: 50%;
+    width: 12.5rem;
+    top: 3.125rem;
+    height: calc(100vh - 3.125rem);
+    padding: 0.9375rem;
   }
 
   .image-gallery {
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
     margin-left: 0;
   }
 
   .image-gallery img.zoomable {
     width: 100%;
-    max-width: 300px;
+    max-width: 18.75rem;
     margin: 0 auto;
   }
 
   footer {
-    height: auto;
-    padding: 15px 10px;
-    font-size: 14px;
+    padding: 0.9375rem 0.625rem;
+    font-size: 0.875rem;
     text-align: center;
   }
 
   .footer-content {
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
   }
 
   .footer-right img {
-    margin: 0 10px;
+    margin: 0 0.625rem;
   }
 
   .contact-popup {
     width: 90vw;
     right: 5vw;
-    bottom: 60px;
-    font-size: 13px;
+    bottom: 3.75rem;
+    font-size: 0.8125rem;
   }
 }
