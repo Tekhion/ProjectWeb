@@ -54,15 +54,27 @@
 }
 
 
-@media (max-width: 600px) {
-  .SocialMedia {
-    transform: scale(0.8);
-    margin-right: 0.5em;
+@media (max-width: 1000px) {
+  .buttonTitle {
+    font-size: 1em; 
+    padding-left: 0.1em;
+    padding-bottom: 0.3em;
   }
 
-  .buttonTitle {
-    font-size: 1.1em;
+  .clickableButton {
+    font-size: 0.9em;
+    padding: 0.25em 0.5em;
+  }
+
+  .marginButtons,
+  .marginButtonFirst {
+    padding: 0 0.5em;
+  }
+
+  .SocialMedia {
+    transform: scale(0.7);
+    margin-right: 0.2em;
+    gap: 0.3em;
   }
 }
-
 
