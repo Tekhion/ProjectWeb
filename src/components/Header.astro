@@ -55,18 +55,16 @@ import '../styles/sidebar.css';
 </header>
 
 <nav id="sidebar" class="sidebar">
-      <button class="dropdown-toggle" aria-expanded="false" aria-controls="proyectos-list" type="button">
-        Projects
-        <svg class="arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="6 9 12 15 18 9"></polyline>
-        </svg>
-      </button>
-      <ul id="proyectos-list" hidden>
-        <li class="Projects"><a class="buttonText" href="/DivergenceMeter">Divergence Meter Build</a></li>
-      </ul>
-    </li>
+  <button class="dropdown-toggle" aria-expanded="false" aria-controls="proyectos-list" type="button">
+    Projects
+    <svg class="arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+  <ul id="proyectos-list" hidden>
+    <li class="Projects"><a class="buttonText" href="./DivergenceMeter">Divergence Meter Build</a></li>
   </ul>
 </nav>
 
-<script type="module" src="/src/scripts/menu.js"></script>
-<script type="module" src="/src/scripts/animation_arrow.js"></script>
+<script type="module" src="/scripts/menu.js" is:inline></script>
+<script type="module" src="/scripts/animation_arrow.js" is:inline></script>
