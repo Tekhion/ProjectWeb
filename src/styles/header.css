@@ -48,6 +48,14 @@
   flex-shrink: 0;
 }
 
+.Projects a.buttonText {
+  display: block;
+  width: 100%;
+  padding: 0.5em 1em; /* ajusta el padding a tu gusto */
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 
 .marginButtonFirst{
   padding-left: 0.75em;
