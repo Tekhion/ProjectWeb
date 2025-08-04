@@ -180,6 +180,28 @@
   cursor: pointer;
 }
 
+#help-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ff9d41;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 1500;
+  transition: background-color 0.3s ease;
+}
+
+#help-button:hover {
+  background-color: #e87c00;
+}
+
 @keyframes fadeInUp {
   from {
     transform: translateY(30px);
@@ -204,4 +226,59 @@
 
 .links{
   color:orange;
+}
+
+/* For phones */
+
+@media (max-width: 600px) {
+  .main-card-container,
+  .cards-container {
+    padding: 0 5px;
+    gap: 10px;
+  }
+
+  .card.main-card {
+    max-height: none;
+  }
+
+  .card.main-card img {
+    height: 180px;
+  }
+
+  .card.main-card .description {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .card.small-card {
+    width: 90%;
+  }
+
+  .card.small-card img {
+    height: 100px;
+  }
+
+  .card.small-card .description {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .modal-content {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  .modal-content img {
+    max-height: 200px;
+  }
+
+  .modal-text {
+    font-size: 14px;
+  }
+
+  #close-modal {
+    font-size: 24px;
+    top: 8px;
+    right: 10px;
+  }
 }
