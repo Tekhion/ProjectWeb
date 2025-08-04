@@ -3,17 +3,10 @@ import '../styles/introDivergence.css'
 import '../styles/DivergenceMeter.css'
 import Header from '../components/Header.astro'
 import '../styles/global.css'
+
+import Layout from '../layouts/Layout.astro'
 ---
-<Header/>
-
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> </title>
-</head>
-<body>
-
+<Layout pageTitle="Divergence Meter Build">
 <div id="video-container">
   <div id="black-overlay"></div>
   <video id="bg-video" autoplay muted loop>
@@ -29,8 +22,7 @@ import '../styles/global.css'
     <img src="/media/dates/31-7-25.png" alt="" />
     <div class="description">PCBs and other component...</div>
     <div class="card-details">
-      <!-- why in the world the euro symbol wouldn't work? -->
-      <p>After checking the page that I mentioned yesterday, I decided to try buying there the 2 PCBs, in total the price was around 45 &euro; (with shipping included), after trying to watch if there would be any possibility to get any fabricator in Spain (I guess they exist but I couldn't find any that would be worth). I guess I will check if it was worth buying there or it would be better just buying on the link of the official Project. <br><br><p>I also remembered the component I mentioned yesterday (1364 - HVPS-H), I forgot to buy it, as this is not purchased at Mouser (;-;). Now with all the orders placed (minus the nixies tubes that will be an adventure to find good ones in terms of price...) it would only remain to wait for everything to arrive and check it out. I guess this could take at most 1 week, since the PCBs take between 4-5 days to be manufactured plus shipping, the same with the Mouser components, while the 1364-HVPS, if you live outside US as in my case, a week minimum... </p>
+      <p>After checking the page that I mentioned yesterday, I decided to try buying there the 2 PCBs, in total the price was around 45€ (with shipping included), after trying to watch if there would be any possibility to get any fabricator in Spain (I guess they exist but I couldn't find any that would be worth). I guess I will check if it was worth buying there or it would be better just buying on the link of the official Project. <br><br><p>I also remembered the component I mentioned yesterday (1364 - HVPS-H), I forgot to buy it, as this is not purchased at Mouser (;-;). Now with all the orders placed (minus the nixies tubes that will be an adventure to find good ones in terms of price...) it would only remain to wait for everything to arrive and check it out. I guess this could take at most 1 week, since the PCBs take between 4-5 days to be manufactured plus shipping, the same with the Mouser components, while the 1364-HVPS, if you live outside US as in my case, a week minimum... </p>
       <img src="/media/2.png" alt="Componente extra 1" />
     </div>
   </div>
@@ -41,7 +33,7 @@ import '../styles/global.css'
     <img src="/media/dates/30-7-25.png" alt="" />
     <div class="description">Components planification and more</div>
     <div class="card-details">
-      <p>I've created a <a class="links" href="https://drive.proton.me/urls/RG8CAK8HNW#9eYjQYaqVEix">list</a> based on the original one with all the necessary electronic components. One of them, the 1364 - HVPS Horizontal, needs to be ordered from the US (the shipping cost is $22, rip. But I guess it's worth it). <br><br><p>As for the PCBs, the price can vary a lot depending on the supplier, shipping, and your location. I'm currently considering ordering them from <a class="links" href="https://jlcpcb.com/">JLCPCB</a>, which seems like a very good option. They require a minimum of 5 boards per design (there are two designs for this project), but the upside is that the total cost, including taxes and shipping, is around &euro;50, half of what it would cost to order from the project's original site. <br><br> I ordered the components with the financial help of a friend who is also eager to see this project become a reality, for which I'm very grateful. Most of the parts were ordered through <a class="links" href="https://eu.mouser.com/">Mouser.com</a>, a site recommended by the original project creators. In my case, they offer free shipping from Europe, and the total cost was between &euro;70 and &euro;80. </p>
+      <p>I've created a <a class="links" href="https://drive.proton.me/urls/RG8CAK8HNW#9eYjQYaqVEix">list</a> based on the original one with all the necessary electronic components. One of them, the 1364 - HVPS Horizontal, needs to be ordered from the US (the shipping cost is $22, rip. But I guess it's worth it). <br><br><p>As for the PCBs, the price can vary a lot depending on the supplier, shipping, and your location. I'm currently considering ordering them from <a class="links" href="https://jlcpcb.com/">JLCPCB</a>, which seems like a very good option. They require a minimum of 5 boards per design (there are two designs for this project), but the upside is that the total cost, including taxes and shipping, is around 50 €, half of what it would cost to order from the project's original site. <br><br> I ordered the components with the financial help of a friend who is also eager to see this project become a reality, for which I'm very grateful. Most of the parts were ordered through <a class="links" href="https://eu.mouser.com/">Mouser.com</a>, a site recommended by the original project creators. In my case, they offer free shipping from Europe, and the total cost was between 70€ and 80€. </p>
       <img src="/media/1.png" alt="Componente extra 1" />
     </div>
   </div>
@@ -62,6 +54,5 @@ import '../styles/global.css'
   <script src="/scripts/introVideo.js" type="module" is:inline></script>
   <script src="/scripts/tooglecard.js" type="module" is:inline></script>
 
-</body>
-</html>
+</Layout>
 
