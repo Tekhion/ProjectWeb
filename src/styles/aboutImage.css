@@ -14,21 +14,21 @@
   object-fit: cover;
   border: 1px solid rgb(0, 0, 0);
   opacity: 0;
-  animation: fadeIn 1.5s forwards;
+  animation: fadeIn 1s forwards;
   animation-delay: 0.5s;
 }
 
 
 .fade-in-title {
   opacity: 0;
-  animation: fadeIn 1.5s ease-out forwards;
+  animation: fadeIn 1s ease-out forwards;
   animation-delay: 1.5s;
   color:white;
 }
 
 .fade-in-text {
   opacity: 0;
-  animation: fadeIn 1.5s ease-out forwards;
+  animation: fadeIn 1s ease-out forwards;
   animation-delay: 2.5s;
   color:white;
   margin-left: 2em;
@@ -39,7 +39,7 @@
 .fade-in-contact {
   opacity: 0;
   animation: fadeIn 1.5s forwards;
-  animation-delay: 4s;
+  animation-delay: 3.25s;
   margin-top: 0.75rem;
   font-size: 1rem;
   line-height: 1.6;

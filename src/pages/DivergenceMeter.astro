@@ -1,12 +1,17 @@
 ---
 import '../styles/introDivergence.css'
 import '../styles/DivergenceMeter.css'
-import Header from '../components/Header.astro'
+
 import '../styles/global.css'
 
 import Layout from '../layouts/Layout.astro'
----
+
+const dev = import.meta.env.MODE === 'development';
+
+--- 
 <Layout pageTitle="Divergence Meter Build">
+
+    
 <div id="video-container">
   <div id="black-overlay"></div>
   <video id="bg-video" autoplay muted loop>
@@ -19,17 +24,35 @@ import Layout from '../layouts/Layout.astro'
 <div class="main-card-container hidden">
   
   <div class="card main-card">
+    <img src="/media/dates/15-8-25.png" alt="" />
+    <div class="description">Nixie tubes and other stuff</div>
+    <div class="card-details">
+      <p>Today I received the nixie tubes in perfect condition (physically, we'll have to see if the cathodes work). I've attached an image at the end of this post showing both sides, where you can even see the quality stamp of the USSR, since most of them were manufactured there. Supposedly, the pack of 8 are all new, meaning they are not used as they are normally sold on eBay. However, I have to say that I have been quite lucky to have several contacts and be able to obtain these nixie tubes at a good price and quality, approximately €10 per unit, to which you can add approximately €10-20 for shipping. I'll leave you to do the maths for those who are interested...). <br><br>
+        Going back to the last post, about soldering the chips, you could say it was... a total disaster. I have a lot of experience with components such as resistors, capacitors, etc. But with SMD components... heh, the first time I had to solder one, it was just as I said the risks could happen, tin bridges formed between them, and when I tried to remove it, my soldering iron stopped melting the tin that was stuck as well as the new one (due to the tip, which was completely oxidised from past use and current use). Therefore, I was forced to buy those same chips again, once more with financial help from a friend, whom I thank very much, as well as buying some pieces that I forgot to add for decoration or the plastic part.  I have already ordered some new tips for the soldering iron, and let's say I could practise with the chip where all of the above happened (since I have no doubt that after spending so much time trying to remove the solder from the SMD, I burned it completely). <br> <br>
+
+If you notice a big days difference from this actual post and the last one, it's because of that and because I'm still waiting for the 1364 HVPS-H, which has supposedly already been shipped. I don't have a reference code to track it, but it's supposed to take 3 to 5 business days. On the other hand, one of the good things about the website I mentioned a few posts ago is that for a fairly low price, you get 5 PCBs, not 1. So I could take advantage of practising with the PCB and the already burnt SMD without worrying about damaging the PCB in any way. That said, I should warn you that it may be a few days before the next post, possibly even 5 days or more, as the tips will arrive tomorrow, but the SMDs and other decorative pieces are supposed to arrive between the 18th and the 25th (damn... although according to the shipping status, it has already been picked up by the delivery company, so it could happen like last time and arrive much closer to the minimum date, the 18th.)
+</p>
+
+<div class="text-images">
+  <img src="/media/ImagesDiv/6.jpg" alt="">
+  <img src="/media/ImagesDiv/7.jpg" alt="">
+</div>
+    </div>
+  </div>
+</div>
+
+<div class="cards-container hidden">
+
+
+    <div class="card small-card">
     <img src="/media/dates/9-8-25.png" alt="" />
-    <div class="description">PCBs and components received</div>
+    <div class="description">Soldering Main PCB</div>
     <div class="card-details">
       <p>I started soldering the parts onto the main board, and I have attached some images of the process. Clearly, there are still several parts missing from this board, but there are very few (not counting the 1364 HVPS-H, which I have not yet received, and the owner has not given me an approximate date for delivery), and I also need to solder the second board. I will probably start soldering tomorrow, which will be the most difficult part in comparison because the pins on the HV5622PG-G are quite close together and I have seen cases where a tin bridge can form (one pin connects to another pin on the chip itself).<br><br> I also had time to import the .HEX code to the PIC16F628A with the Pickit 3, with some problems along the way, either due to the programme it uses, the pins or the Pickit itself, but once solved, it is simply a matter of importing the file to the programme and then to the PIC. I have attached several images of the process.</p>
       <img src="/media/ImagesDiv/4.jpg" alt="" />
       <img src="/media/ImagesDiv/5.png" alt="" />
     </div>
   </div>
-</div>
-
-<div class="cards-container hidden">
 
     <div class="card small-card">
     <img src="/media/dates/4-8-25.png" alt="" />
