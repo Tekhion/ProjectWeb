@@ -202,19 +202,6 @@
   background-color: #e87c00;
 }
 
-.text-images {
-  display: flex;
-  justify-content: center;  
-  gap: 0;
-}
-
-.text-images img {
-  display: block;
-  height: 120px;
-  width: auto;
-  object-fit: cover;
-  border-radius: 10px;
-}
 
 
 
