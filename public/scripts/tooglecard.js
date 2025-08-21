@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const helpButton = document.getElementById('help-button');
   if (helpButton) {
     helpButton.addEventListener('click', () => {
-      modalImage.src = '/media/ImagesDiv/104.jpg';
+      modalImage.src = '/media/ImagesDiv/104.avif';
       modalText.innerHTML = `
         <h2>What is this project?</h2>
         <p>This build is based on an anime/visual novel I saw a while ago, Steins;gate, which has a function within it, which I'll let you discover on your own if you're interested in watching it (recommended :) ). Apart from that you could also say that it will have double use as a nixie tube clock as the chip itself that allows this costs relatively little and in the original project they show how to install it. <br><br></p>
