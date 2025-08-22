@@ -1,14 +1,25 @@
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('modal');
   const modalImage = document.getElementById('modal-image');
   const modalText = document.getElementById('modal-text');
   const closeBtn = document.getElementById('close-modal');
 
+  // Función para cargar imágenes con data-src
+  function loadImages(card) {
+    if (!card) return;
+    const imgs = card.querySelectorAll('img[data-src]');
+    imgs.forEach(img => {
+      if (!img.dataset.src) return;
+      img.src = img.dataset.src;
+      img.removeAttribute('data-src');
+    });
+  }
+
   document.querySelectorAll('.card.main-card, .card.small-card').forEach(card => {
     card.addEventListener('click', () => {
+      // ⚡ Cargamos las imágenes internas antes de abrir el modal
+      loadImages(card);
+
       const img = card.querySelector('img');
       const detailsElement = card.querySelector('.card-details');
       let details = '';
