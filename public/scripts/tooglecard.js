@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalText = document.getElementById('modal-text');
   const closeBtn = document.getElementById('close-modal');
 
-  // Función para cargar imágenes con data-src
   function loadImages(card) {
     if (!card) return;
     const imgs = card.querySelectorAll('img[data-src]');
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.card.main-card, .card.small-card').forEach(card => {
     card.addEventListener('click', () => {
-      // ⚡ Cargamos las imágenes internas antes de abrir el modal
       loadImages(card);
 
       const img = card.querySelector('img');
