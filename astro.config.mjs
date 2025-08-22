@@ -7,7 +7,6 @@ export default defineConfig({
   ],
   site: `https://tekhion.com`,
   output: "static",
-  outDir: "./docs",
   build: {
   assets: "astro",
   },
