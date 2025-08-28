@@ -1,0 +1,23 @@
+---
+import Header from "../components/Header.astro"
+import '../styles/global.css'
+const { pageTitle = 'Tekhion Blog' } = Astro.props;
+---
+
+
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+		<script defer src="https://tomato.zlendy.com/script.js" data-website-id="19c5fc42-333d-41e3-b8a6-d41fc391b33c"></script>
+	</head>
+	<body>
+		<Header/>
+		<slot />
+	</body>
+</html>
