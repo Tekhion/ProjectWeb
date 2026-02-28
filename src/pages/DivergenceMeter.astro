@@ -1,0 +1,163 @@
+---
+import '../styles/introDivergence.css'
+import '../styles/DivergenceMeter.css'
+
+import '../styles/global.css'
+
+import Layout from '../layouts/Layout.astro'
+
+const dev = import.meta.env.MODE === 'development';
+
+--- 
+<Layout pageTitle="Divergence Meter Build">
+
+    
+<div id="video-container">
+  <div id="black-overlay"></div>
+  <video id="bg-video" autoplay muted loop>
+    <source src="/media/scroll.mp4" type="video/mp4" />
+    Tu navegador no soporta video HTML5.
+  </video>
+</div>
+
+
+<div class="main-card-container hidden">
+  
+  <div class="card main-card">
+  <img src="/media/dates/13-9-25.avif" alt=""/>
+    <div class="description">Clock working</div>
+    <div class="card-details">
+      <p>Well... After a long time without updating for various reasons (the main one being laziness after seeing that the clock and everything else works), I can say that I have finished the electronics part. I am attaching a video of the clock working and an image. As you can see, I still need to install the aluminium clock case itself before I can officially say that I'm done with it. I'll keep updating this page until it's 100% finished. I hope I can order the metal plates this month so I can finish this project and not drag it out any longer. <br><br> I am very pleased to see this project working, as I saw it some time ago with no intention of doing it because it involved quite a few things, parts, and soldering skills, but finally, after thinking of it as a summer project, I decided to do it and finished it (almost). I would also like to thank the original author of the clock itself, as he makes it much easier in terms of the PCB design for soldering, explanations, precautions, step-by-step instructions, especially in the most complex cases. The author and his website are linked at the bottom right of this page on the button with the "?" symbol. If you have any intention of creating it or the possibility of doing so, I recommend you take a look, as it has been an experience for me to have to create something from scratch, in the context of having to order the individual components, solder them, test them and adjust the voltage since the design and having to plan where each component goes, apart from the clock code, is already done. <br><br> And I thank the people who have read this blog, as well as those who have commented to me personally, either in person, through messages, or on social media. In a few weeks, I will update the complete result, the finished watch itself with the case.
+</p>
+<div class="text-images">
+  <img data-src="/media/ImagesDiv/11.avif" alt="">
+<video controls
+       style="display: block; margin: 20px auto; max-width: 100%; height: auto; border-radius: 20px;">
+  <source src="/media/clockvid.mp4" type="video/mp4">
+  No support for this video format
+</video>
+
+</div>
+    </div>
+  </div>
+</div>
+
+<div class="cards-container hidden">
+
+  <div class="card small-card">
+  <img src="/media/dates/22-8-25.avif" alt=""/>
+    <div class="description">Soldering finished</div>
+    <div class="card-details">
+      <p>I finally received the 1364 - HVPS today (or rather, I picked it up... since the company here in Spain, Correos, is terrible with deliveries...). <br><br>
+        Soldering it to the PCB wasn't a big problem. I'm attaching a picture with all the parts soldered. All that was left was to solder the power jack port itself, some resistors on the PCB where the nixie tubes would go, and the 1364-HVPS itself, which arrived today. Therefore, in terms of PCBs, both would already be finished, only the screw for the TO220 would be missing, as well as the aluminium parts for the clock case itself. Tomorrow I will start cutting the top of the clock and installing the nixie tubes, and finally, if I finish all that tomorrow, I could try turning on the clock tomorrow.</p>
+<div class="text-images">
+  <img data-src="/media/ImagesDiv/10.avif" alt="">
+</div>
+    </div>
+  </div>
+
+  <div class="card small-card">
+  <img src="/media/dates/21-8-25.avif" alt=""/>
+    <div class="description">Finishing soldering and details</div>
+    <div class="card-details">
+      <p>After several days without posting anything, I'm here to say that I've made quite a bit of progress. The only things left to do are a few components such as resistors and other small things like cutting the plastic where the nixie tubes will go. Speaking of the nixie tubes, I've attached a picture of how I've painted the plastic that comes with the nixies themselves, which I've painted with a special spray for plastic in a grey similar to the one in the original blog, mainly because I don't want them to stand out too much.<br><br>
+        Apart from that, I have new information about the 1364-H. According to the information provided, the courier company we have here in Spain, Correos, has been shipping it for 6 days (when the estimated delivery time is 2 to 3 days), so I went today and they told me that they were having problems with the delivery drivers and that I could pick it up when it was available at the office itself instead of waiting for the delivery, so I could have everything I need to finish it between tomorrow and Monday. <br><br>
+        I am attaching images of both PCBs already soldered (they can be disconnected as they are connected by header pins) and the result of painting the plastic parts that came with the nixie tubes.</p>
+
+<div class="text-images">
+  <img data-src="/media/ImagesDiv/8.avif" alt="">
+  <img data-src="/media/ImagesDiv/9.avif" alt="">
+</div>
+    </div>
+  </div>
+
+    <div class="card small-card">
+  <img src="/media/dates/15-8-25.avif" alt=""/>
+    <div class="description">Nixie tubes and other stuff</div>
+    <div class="card-details">
+      <p>Today I received the nixie tubes in perfect condition (physically, we'll have to see if the cathodes work). I've attached an image at the end of this post showing both sides, where you can even see the quality stamp of the USSR, since most of them were manufactured there. Supposedly, the pack of 8 are all new, meaning they are not used as they are normally sold on eBay. However, I have to say that I have been quite lucky to have several contacts and be able to obtain these nixie tubes at a good price and quality, approximately €10 per unit, to which you can add approximately €10-20 for shipping. I'll leave you to do the maths for those who are interested...). <br><br>
+        Going back to the last post, about soldering the chips, you could say it was... a total disaster. I have a lot of experience with components such as resistors, capacitors, etc. But with SMD components... heh, the first time I had to solder one, it was just as I said the risks could happen, tin bridges formed between them, and when I tried to remove it, my soldering iron stopped melting the tin that was stuck as well as the new one (due to the tip, which was completely oxidised from past use and current use). Therefore, I was forced to buy those same chips again, once more with financial help from a friend, whom I thank very much, as well as buying some pieces that I forgot to add for decoration or the plastic part.  I have already ordered some new tips for the soldering iron, and let's say I could practise with the chip where all of the above happened (since I have no doubt that after spending so much time trying to remove the solder from the SMD, I burned it completely). <br> <br>
+
+If you notice a big days difference from this actual post and the last one, it's because of that and because I'm still waiting for the 1364 HVPS-H, which has supposedly already been shipped. I don't have a reference code to track it, but it's supposed to take 3 to 5 business days. On the other hand, one of the good things about the website I mentioned a few posts ago is that for a fairly low price, you get 5 PCBs, not 1. So I could take advantage of practising with the PCB and the already burnt SMD without worrying about damaging the PCB in any way. That said, I should warn you that it may be a few days before the next post, possibly even 5 days or more, as the tips will arrive tomorrow, but the SMDs and other decorative pieces are supposed to arrive between the 18th and the 25th (damn... although according to the shipping status, it has already been picked up by the delivery company, so it could happen like last time and arrive much closer to the minimum date, the 18th.)
+</p>
+
+<div class="text-images">
+  <img data-src="/media/ImagesDiv/6.avif" alt="">
+  <img data-src="/media/ImagesDiv/7.avif" alt="">
+</div>
+    </div>
+  </div>
+
+    <div class="card small-card">
+    <img src="/media/dates/9-8-25.avif" alt="" />
+    <div class="description">Soldering Main PCB</div>
+    <div class="card-details">
+      <p>I started soldering the parts onto the main board, and I have attached some images of the process. Clearly, there are still several parts missing from this board, but there are very few (not counting the 1364 HVPS-H, which I have not yet received, and the owner has not given me an approximate date for delivery), and I also need to solder the second board. I will probably start soldering tomorrow, which will be the most difficult part in comparison because the pins on the HV5622PG-G are quite close together and I have seen cases where a tin bridge can form (one pin connects to another pin on the chip itself).<br><br> I also had time to import the .HEX code to the PIC16F628A with the Pickit 3, with some problems along the way, either due to the programme it uses, the pins or the Pickit itself, but once solved, it is simply a matter of importing the file to the programme and then to the PIC. I have attached several images of the process.</p>
+      <img data-src="/media/ImagesDiv/4.avif" alt="" />
+      <img data-src="/media/ImagesDiv/5.avif" alt="" />
+    </div>
+  </div>
+
+    <div class="card small-card">
+    <img src="/media/dates/4-8-25.avif" alt="" />
+    <div class="description">PCBs and components received</div>
+    <div class="card-details">
+      <p>Today I have already received the package with the PCBs and the components from Mouser, so the only thing missing is the 1364 - HVPS (which, according to what I have asked, the assembly may take some time while the shipment is done in 2-3 days). <br><br> On the other hand I would like to mention that for the payment of the PCBs I had to pay the sad amount of 33€ extra for the customs tax... which is still less than the price if you buy it through the official project page so I guess it's ok. In the next few days I will attach some pictures of the PCBs as I only had a quick look at them as I want to open everything once I have received everything I need to solder the parts to the PCBs, probably tomorrow and if not, in the next few days.</p>
+      <img data-src="/media/ImagesDiv/3.avif" alt="" />
+    </div>
+  </div>
+
+  <div class="card small-card">
+    <img src="/media/dates/31-7-25.avif" alt="" />
+    <div class="description">PCBs and other component...</div>
+    <div class="card-details">
+      <p>After checking the page that I mentioned yesterday, I decided to try buying there the 2 PCBs, in total the price was around 45€ (with shipping included), after trying to watch if there would be any possibility to get any fabricator in Spain (I guess they exist but I couldn't find any that would be worth). I guess I will check if it was worth buying there or it would be better just buying on the link of the official Project. <br><br><p>I also remembered the component I mentioned yesterday (1364 - HVPS-H), I forgot to buy it, as this is not purchased at Mouser (;-;). Now with all the orders placed (minus the nixies tubes that will be an adventure to find good ones in terms of price...) it would only remain to wait for everything to arrive and check it out. I guess this could take at most 1 week, since the PCBs take between 4-5 days to be manufactured plus shipping, the same with the Mouser components, while the 1364-HVPS, if you live outside US as in my case, a week minimum... </p>
+      <img data-src="/media/ImagesDiv/2.avif" alt="" />
+    </div>
+  </div>
+
+
+  <div class="card small-card">
+    <img src="/media/dates/30-7-25.avif" alt="" />
+    <div class="description">Components planification and more</div>
+    <div class="card-details">
+      <p>I've created a <a class="links" href="https://drive.proton.me/urls/RG8CAK8HNW#9eYjQYaqVEix">list</a> based on the original one with all the necessary electronic components. One of them, the 1364 - HVPS Horizontal, needs to be ordered from the US (the shipping cost is $22, rip. But I guess it's worth it). <br><br><p>As for the PCBs, the price can vary a lot depending on the supplier, shipping, and your location. I'm currently considering ordering them from <a class="links" href="https://jlcpcb.com/">JLCPCB</a>, which seems like a very good option. They require a minimum of 5 boards per design (there are two designs for this project), but the upside is that the total cost, including taxes and shipping, is around 50 €, half of what it would cost to order from the project's original site. <br><br> I ordered the components with the financial help of a friend who is also eager to see this project become a reality, for which I'm very grateful. Most of the parts were ordered through <a class="links" href="https://eu.mouser.com/">Mouser.com</a>, a site recommended by the original project creators. In my case, they offer free shipping from Europe, and the total cost was between 70€ and 80€. </p>
+      <img data-src="/media/ImagesDiv/1.avif" alt="" />
+    </div>
+  </div>
+
+  
+
+
+</div>
+
+
+
+  <div class="modal-overlay" id="modal">
+  <div class="modal-content">
+    <img id="modal-image" src="" alt="" />
+    <div class="modal-text" id="modal-text"></div>
+    <button id="close-modal">&times;</button>
+  </div>
+  
+</div>
+
+<button id="help-button" aria-label="Mostrar ayuda">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle class="help-bg" cx="12" cy="12" r="10"/>
+    <path class="help-path" d="M9.09 9a3 3 0 1 1 5.83 1c0 2-3 2-3 4"/>
+    <line class="help-dot" x1="12" y1="17" x2="12" y2="17"/>
+  </svg>
+</button>
+
+
+
+  <script src="/scripts/introVideo.js" type="module" is:inline></script>
+  <script src="/scripts/tooglecard.js" type="module" is:inline></script>
+  <script src="/scripts/scroll.js" type="module" is:inline></script>
+
+</Layout>
+
+
+[alex@alex ProjectWeb]$ code   
+[alex@alex ProjectWeb]$ py   
